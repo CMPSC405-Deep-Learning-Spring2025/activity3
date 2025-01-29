@@ -17,7 +17,7 @@
      - **Mean Absolute Error (MAE)**: 
        ![MAE](https://latex.codecogs.com/png.latex?\text{MAE}=\frac{1}{n}\sum_{i=1}^{n}|y_i-\hat{y}_i|)
      - **Huber Loss**: 
-       ![Huber Loss](https://latex.codecogs.com/png.latex?L_\delta(a)=\begin{cases}\frac{1}{2}a^2&\text{for}|a|\leq\delta\\\delta(|a|-\frac{1}{2}\delta)&\text{for}|a|>\delta\end{cases})
+       ![Huber Loss](https://latex.codecogs.com/png.latex?L_\delta(y_i-\hat{y}_i)=\begin{cases}\frac{1}{2}(y_i-\hat{y}_i)^2&\text{for}|y_i-\hat{y}_i|\leq\delta\\\delta(|y_i-\hat{y}_i|-\frac{1}{2}\delta)&\text{for}|y_i-\hat{y}_i|>\delta\end{cases})
   
    - Modify the provided code to include these loss functions and observe their impact on the model's performance.
 2. **Experiment with Learning Rates**:
